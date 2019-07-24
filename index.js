@@ -14,9 +14,17 @@ function destructivelyRemoveLastKitten() {
 }
 
 function destructivelyRemoveFirstKitten() {
-  return kittens.shift()
+  return kittens.shift();
 }
 
 function appendKitten(element) {
-  return kittens.concat("element")
+  return kittens.concat("element");
+}
+
+function prependKitten(element) {
+  return [element, ...kittens];
+}
+
+function removeLastKitten() {
+  return kittens.slice(0, kittens.length - 1);
 }
