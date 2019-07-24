@@ -9,6 +9,14 @@ function destructivelyPrependKitten(element) {
   return kittens.unshift("element");
 }
 
-function destructivelyRemoveLastKitten(element) {
+function destructivelyRemoveLastKitten() {
   return kittens.pop();
+}
+
+function destructivelyRemoveFirstKitten() {
+  return kittens.shift()
+}
+
+function appendKitten(element) {
+  return kittens.concat("element")
 }
